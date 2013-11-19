@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RequireJS Examples</title>
+  <!-- reasons to use requirejs -->
+  <!-- * to acheive modularity -->
+  <!-- * to clairify dependencies -->
+  <!-- * to minimize global vars -->
+  <!-- * script tags load synchronously - which is a performance hit -->
+  <!-- * the defer and async attributes don't ensure proper order of execution -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body style="margin:20px">
+  <h1>RequireJS Examples</h1>
+  <div id="container"></div>
+  <!-- require.js is the src, and our main js file as the data-main attr -->
+  <script data-main="js/ex2" src="js/vendor/require.js"></script>
+  <!-- Mechanics of require.js -->
+  <!-- RequireJS loads each dependency as a script tag, using head.appendChild(). -->
+  <!-- RequireJS waits for all dependencies to load, figures out the right order in which --> 
+  <!-- to call the functions that define the modules -->
+  <!-- then calls the module definition functions in the right order. -->
+</body>
+</html>
