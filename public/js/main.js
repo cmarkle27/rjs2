@@ -28,5 +28,10 @@ require(['module2', 'jQuery'], function(module2ref, $) {
   // do something with the loaded modules
   var module2 = new module2ref();
   $('#container').html("Module 2 says that module 1's name is " + module2.getModule1Name());
+
+  setTimeout(function() {
+    alert("Happy New Year!")
+  }, 3000)
+
 });
 
