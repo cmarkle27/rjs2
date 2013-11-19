@@ -5,15 +5,11 @@
 // Config
 require.config({
   paths: {
-    'jQuery': 'vendor/jquery-2.0.3.min',
-    'underscore': 'vendor/underscore-1.5.2.min'
+    'jQuery': 'vendor/jquery-2.0.3.min'
   },
   shim: {
     'jQuery': {
       exports: '$'
-    },
-    'underscore': {
-      exports: '_'
     }
   }
 
